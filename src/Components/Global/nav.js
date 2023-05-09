@@ -34,14 +34,17 @@ export default function Nav() {
 	}, [])
 
 	return (
-		<Disclosure as="nav" className="bg-slate-800">
+		<Disclosure
+			as="nav"
+			className="fixed z-20 w-screen bg-slate-900 sm:bg-transparent"
+		>
 			{({ open }) => (
 				<>
 					<div className="mx-auto max-w-7xl px-8">
 						<div className="relative flex h-20 items-center justify-between">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
-								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-400 hover:bg-slate-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none sm:text-slate-900 sm:hover:text-slate-700">
 									<span className="sr-only">Open main menu</span>
 									{open ? (
 										<XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -50,43 +53,49 @@ export default function Nav() {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-start">
-								<div className="flex items-center">
-									<Link href={'/'}>
-										<Image
-											className="block h-8 w-auto"
-											src="/images/hat.svg"
-											alt="Logo Safari des métiers"
-											width={30}
-											height={30}
-										/>
-									</Link>
-								</div>
-								<div className="hidden sm:ml-8 sm:block">
-									<div className="flex space-x-4">
-										{navigationWithCurrent.map(item => (
-											<Link
-												key={item.name}
-												href={item.href}
-												className={classNames(
-													item.current
-														? 'text-white'
-														: 'text-slate-300 hover:text-white',
-													'rounded-md px-3 py-2 text-sm font-medium'
-												)}
-												aria-current={item.current ? 'page' : undefined}
-											>
-												{item.name}
-											</Link>
-										))}
+							<div className="flex w-full items-center justify-end sm:justify-start">
+								<div
+									className={
+										'flex w-full items-center justify-end sm:w-1/2 sm:justify-between'
+									}
+								>
+									<div className="flex items-center">
+										<Link href={'/'}>
+											<Image
+												className="block h-8 w-auto"
+												src="/images/hat.svg"
+												alt="Logo Safari des métiers"
+												width={30}
+												height={30}
+											/>
+										</Link>
+									</div>
+									<div className="hidden sm:block">
+										<div className="flex space-x-16">
+											{navigationWithCurrent.map(item => (
+												<Link
+													key={item.name}
+													href={item.href}
+													className={classNames(
+														item.current
+															? 'text-white'
+															: 'text-teal-700 hover:text-teal-900',
+														'text-sm font-semibold'
+													)}
+													aria-current={item.current ? 'page' : undefined}
+												>
+													{item.name}
+												</Link>
+											))}
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<Disclosure.Panel className="sm:hidden">
-						<div className="space-y-1 px-2 pb-3 pt-2">
+					<Disclosure.Panel className="bg-slate-900 sm:hidden">
+						<div className="space-y-1 px-8 pb-3 pt-2">
 							{navigationWithCurrent.map(item => (
 								<Disclosure.Button
 									key={item.name}
@@ -95,8 +104,8 @@ export default function Nav() {
 									className={classNames(
 										item.current
 											? 'bg-slate-900 text-white'
-											: 'text-slate-300 hover:bg-slate-700 hover:text-white',
-										'block rounded-md px-3 py-2 text-base font-medium'
+											: 'text-slate-100 hover:bg-slate-700 hover:text-white',
+										'block rounded-md px-3 py-2 font-medium'
 									)}
 									aria-current={item.current ? 'page' : undefined}
 								>
