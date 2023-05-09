@@ -44,7 +44,7 @@ export default function Nav() {
 						<div className="relative flex h-20 items-center justify-between">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
-								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 focus:outline-none sm:text-slate-900 sm:hover:text-slate-700">
+								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-50 hover:text-slate-100 focus:outline-none">
 									<span className="sr-only">Open main menu</span>
 									{open ? (
 										<XMarkIcon className="block h-6 w-6" aria-hidden="true" />
