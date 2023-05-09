@@ -1,0 +1,29 @@
+{
+	"name": "infotel-safari",
+	"version": "0.1.0",
+	"private": false,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prettier": "prettier --write .",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"autoprefixer": "10.4.14",
+		"copy-webpack-plugin": "11.0.0",
+		"eslint": "8.40.0",
+		"eslint-config-next": "13.4.1",
+		"husky": "8.0.3",
+		"next": "13.4.1",
+		"postcss": "8.4.23",
+		"prettier": "2.8.8",
+		"prettier-plugin-tailwindcss": "0.2.8",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "4.8.0",
+		"sharp": "0.32.1",
+		"tailwindcss": "3.3.2"
+	}
+}
