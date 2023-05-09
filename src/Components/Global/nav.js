@@ -41,7 +41,7 @@ export default function Nav() {
 			{({ open }) => (
 				<>
 					<div className="mx-auto max-w-7xl px-8">
-						<div className="relative flex h-20 items-center justify-between">
+						<div className="relative flex h-16 items-center justify-between">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
 								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-50 hover:text-slate-100 focus:outline-none">
@@ -95,7 +95,7 @@ export default function Nav() {
 					</div>
 
 					<Disclosure.Panel className="bg-slate-900 sm:hidden">
-						<div className="space-y-1 px-8 pb-3 pt-2">
+						<div className="space-y-1 px-8 py-4">
 							{navigationWithCurrent.map(item => (
 								<Disclosure.Button
 									key={item.name}
