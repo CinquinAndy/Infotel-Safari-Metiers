@@ -15,71 +15,82 @@ export default function Home() {
                 <meta name="description" content="Safari des métiers"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-
             <>
                 <Nav/>
                 <div className={'relative min-h-screen w-screen'}>
                     <main
-                        className={'mx-auto h-screen min-h-screen max-w-7xl px-8 py-28 '}
+                        className={'mx-auto h-screen min-h-screen max-w-7xl px-8 py-28'}
                     >
-                        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-                            <div className="lg:pl-20">
-                                <div className="max-w-xs px-2.5 lg:max-w-none">
-                                    <Image
-                                        src={"/images/LogoCinquinAndy.svg"}
-                                        alt="Logo Andy"
-                                        width={300}
-                                        height={300}
-                                        sizes="(min-width: 1024px) 32rem, 20rem"
-                                        className="aspect-square rotate-3 rounded-2xl bg-slate-100 object-cover dark:bg-slate-800"
-                                    />
+                        <div className={"w-full h-full flex items-center justify-center"}>
+                            <div className=" grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                                <div className="lg:pl-20">
+                                    <div className="max-w-xs px-2.5 lg:max-w-none flex">
+                                        <div className={"shadow-2xl w-auto p-10  bg-slate-50 rotate-3 rounded-2xl"}>
+                                            <Image
+                                                src={"/images/LogoCinquinAndy.svg"}
+                                                alt="Logo Andy"
+                                                width={250}
+                                                height={250}
+                                                className="aspect-square  object-cover"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="lg:order-first lg:row-span-2">
-                                <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
-                                    {"Hey ! Moi c'est Andy, je vis à Nantes, là où j'essaye de changer le monde à mon échelle..."}
-                                </h1>
-                                <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-400">
-                                    <p>
-                                        {
-                                            "CEO de la start-up ForMenu.io, Co-fondateur de la plateforme de mise en relation entre particulier " +
-                                            "et maquilleuse professionnelle My-Makeup.fr, Co-fondateur de la plateforme e-commerce Artriste.cc, " +
-                                            "SaaS Makers, et développeur Freelance."
-                                        }
-                                    </p>
-                                    <p>
-                                        {"Je donne parfois des cours et accompagnes des étudiants dans leurs projets et ambitions."}
-                                    </p>
-                                    <p>
-                                        {"Je souhaite partager avec vous mes connaissances et mon expérience dans le domaine exceptionnel du développement. Et le monde de la tech'."}
-                                    </p>
-                                    <p>
-                                        {"à côté de tout ça, je suis également en Alternance Chez Infotel, et encore en étude à l'EPSI."}
-                                    </p>
+                                <div className="h-full flex flex-col items-start justify-center lg:order-first lg:row-span-2">
+                                    <h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
+                                        {"Hey ! Moi c'est Andy !"}
+                                    </h1>
+                                    <div className="mt-6 space-y-7 text-base text-slate-600">
+                                        <p>
+                                            {
+                                                "→ CEO de la start-up ForMenu.io, "
+                                            }
+                                            <br/>
+                                            {
+                                                "→ Co-fondateur de la plateforme de mise en relation entre particuliers et maquilleuses professionnelles My-Makeup.fr,"
+                                            }
+                                            <br/>
+                                            {
+                                                "→ Co-fondateur de la plateforme e-commerce Artriste.cc,"
+                                            }
+                                            <br/>
+                                            {
+                                                "→ Développeur Freelance."
+                                            }
+                                        </p>
+                                        <p>
+                                            {"Je donne parfois des cours et accompagne des étudiants dans leurs projets et ambitions."}
+                                        </p>
+                                        <p>
+                                            {"Je souhaite partager avec vous mes connaissances et mon expérience dans le domaine exceptionnel du développement et le monde de la tech."}
+                                        </p>
+                                        <p>
+                                            {"À côté de tout cela, je suis également en alternance chez Infotel et encore en études à l'EPSI."}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="lg:pl-20">
-                                <ul role="list">
-                                    <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                                        Follow on Instagram
-                                    </SocialLink>
-                                    <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                                        Follow on GitHub
-                                    </SocialLink>
-                                    <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                                        Follow on LinkedIn
-                                    </SocialLink>
-                                    <SocialLink
-                                        href="mailto:contact@andy-cinquin.fr"
-                                        icon={MailIcon}
-                                        className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
-                                    >
-                                        contact@andy-cinquin.fr
-                                    </SocialLink>
-                                </ul>
+                                <div className="lg:pl-20">
+                                    <ul role="list">
+                                        <SocialLink href={"https://www.instagram.com/cinquin.andy/"} icon={InstagramIcon} className="mt-4">
+                                            Follow me on Instagram
+                                        </SocialLink>
+                                        <SocialLink href={"https://github.com/CinquinAndy/"} icon={GitHubIcon} className="mt-4">
+                                            Follow me on GitHub
+                                        </SocialLink>
+                                        <SocialLink href={"https://www.linkedin.com/in/andy-cinquin/"} icon={LinkedInIcon} className="mt-4">
+                                            Follow me on LinkedIn
+                                        </SocialLink>
+                                        <SocialLink
+                                            href="mailto:contact@andy-cinquin.fr"
+                                            icon={MailIcon}
+                                            className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+                                        >
+                                            contact@andy-cinquin.fr
+                                        </SocialLink>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-
                     </main>
                 </div>
             </>
@@ -93,9 +104,9 @@ function SocialLink({className, href, children, icon: Icon}) {
         <li className={clsx(className, 'flex')}>
             <Link
                 href={href}
-                className="group flex text-sm font-medium text-slate-800 transition hover:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500"
+                className="group flex text-sm font-medium text-slate-800 transition hover:text-teal-700 "
             >
-                <Icon className="h-6 w-6 flex-none fill-slate-500 transition group-hover:fill-teal-500"/>
+                <Icon className="h-6 w-6 flex-none fill-slate-500 transition group-hover:fill-teal-700"/>
                 <span className="ml-4">{children}</span>
             </Link>
         </li>
