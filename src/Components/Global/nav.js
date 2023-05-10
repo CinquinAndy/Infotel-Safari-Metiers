@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const navigation = [
 	{ name: 'Albums', href: '/albums', current: false },
-	{ name: 'Qui sommes-nous ?', href: '/qui-sommes-nous', current: false },
+	{ name: 'Qui suis-je ?', href: '/qui-suis-je', current: false },
 	{ name: 'Contact', href: 'mailto:contact@andy-cinquin.fr', current: false },
 ]
 
