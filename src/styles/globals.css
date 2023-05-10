@@ -45,3 +45,12 @@ h1, h2, h3, h4, h5, h6, h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
 .clip-me{
     clip-path: url(#svgPath);
 }
+
+.grid-custom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+

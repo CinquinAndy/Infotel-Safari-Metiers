@@ -7,6 +7,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: '**.andy-cinquin.fr',
 			},
+			{
+				protocol: 'http',
+				hostname: '**.andy-cinquin.fr',
+			},
 		],
 	},
 }
