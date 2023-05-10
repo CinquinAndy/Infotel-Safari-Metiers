@@ -92,22 +92,6 @@ export default function Albums(props) {
                                 </li>
                             ))}
                         </ul>
-                        {/*<section className={'grid-custom'}>*/}
-                        {/*	{albums[4].photos.map(photo => {*/}
-                        {/*		return (*/}
-                        {/*			<div className={'relative h-[300px] w-[300px]'} key={photo}>*/}
-                        {/*				<Image*/}
-                        {/*					alt={'Albums'}*/}
-                        {/*					src={`http://infotel-safari-api.beta.andy-cinquin.fr/api/files/${albums[4].collectionId}/${albums[4].id}/${photo}`}*/}
-                        {/*					quality={75}*/}
-                        {/*					width={500}*/}
-                        {/*					height={500}*/}
-                        {/*					className={'h-full w-full object-cover object-center'}*/}
-                        {/*				/>*/}
-                        {/*			</div>*/}
-                        {/*		)*/}
-                        {/*	})}*/}
-                        {/*</section>*/}
                     </main>
                 </div>
             </>
