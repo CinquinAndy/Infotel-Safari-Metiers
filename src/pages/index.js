@@ -18,7 +18,7 @@ export default function Home() {
 				<div className={'relative h-screen w-screen'}>
 					<div
 						className={
-							'absolute left-0 top-0 -z-10 flex h-full w-full items-center justify-end'
+							'absolute left-0 top-0 z-10 flex h-full w-full items-center justify-end'
 						}
 					>
 						<div className={'relative h-full w-1/3 sm:w-1/2'}>
@@ -30,7 +30,8 @@ export default function Home() {
 							/>
 							<button
 								className={
-									'absolute left-0 top-1/2 flex h-20 w-20 -translate-y-1/2 items-center justify-center rounded-full bg-teal-500/30 shadow-2xl sm:h-28 sm:w-28'
+									'absolute left-0 top-1/2 flex h-20 w-20 -translate-y-1/2 items-center justify-center rounded-full bg-teal-500/30 ' +
+									'shadow-2xl sm:h-28 sm:w-28'
 								}
 							>
 								<div
