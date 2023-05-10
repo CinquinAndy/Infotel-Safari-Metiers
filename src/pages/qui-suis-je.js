@@ -3,45 +3,113 @@ import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import Nav from '@components/Global/nav'
+import Link from "next/link";
+import {GitHubIcon, InstagramIcon, LinkedInIcon} from "@components/Global/SocialIcons";
+import clsx from 'clsx'
 
 export default function Home() {
-	return (
-		<>
-			<Head>
-				<title>Safari des métiers</title>
-				<meta name="description" content="Safari des métiers" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+    return (
+        <>
+            <Head>
+                <title>Andy Cinquin - Safari des métiers</title>
+                <meta name="description" content="Safari des métiers"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
-			<>
-				<Nav />
-				<main className={'h-screen min-h-screen w-screen'}>
-					<section className={'flex h-full w-full items-center justify-center'}>
-						<div
-							className={
-								'flex h-full w-1/2 flex-col items-center justify-center'
-							}
-						>
-							<h1 className={'flex flex-col gap-2'}>
-								<span className={'text-5xl text-teal-500'}>
-									Safari des métiers !
-								</span>
-								<span className={'text-3xl text-slate-700'}>
-									{"L'album de voyage"}
-								</span>
-							</h1>
-						</div>
-						<div className={'relative h-full w-1/2'}>
-							<Image
-								src="/images/background.png"
-								alt="Safari des métiers"
-								fill={true}
-								className={'h-full w-full object-cover object-bottom'}
-							/>
-						</div>
-					</section>
-				</main>
-			</>
-		</>
-	)
+            <>
+                <Nav/>
+                <div className={'relative min-h-screen w-screen'}>
+                    <main
+                        className={'mx-auto h-screen min-h-screen max-w-7xl px-8 py-28 '}
+                    >
+                        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                            <div className="lg:pl-20">
+                                <div className="max-w-xs px-2.5 lg:max-w-none">
+                                    <Image
+                                        src={"/images/LogoCinquinAndy.svg"}
+                                        alt="Logo Andy"
+                                        width={300}
+                                        height={300}
+                                        sizes="(min-width: 1024px) 32rem, 20rem"
+                                        className="aspect-square rotate-3 rounded-2xl bg-slate-100 object-cover dark:bg-slate-800"
+                                    />
+                                </div>
+                            </div>
+                            <div className="lg:order-first lg:row-span-2">
+                                <h1 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+                                    {"Hey ! Moi c'est Andy, je vis à Nantes, là où j'essaye de changer le monde à mon échelle..."}
+                                </h1>
+                                <div className="mt-6 space-y-7 text-base text-slate-600 dark:text-slate-400">
+                                    <p>
+                                        {
+                                            "CEO de la start-up ForMenu.io, Co-fondateur de la plateforme de mise en relation entre particulier " +
+                                            "et maquilleuse professionnelle My-Makeup.fr, Co-fondateur de la plateforme e-commerce Artriste.cc, " +
+                                            "SaaS Makers, et développeur Freelance."
+                                        }
+                                    </p>
+                                    <p>
+                                        {"Je donne parfois des cours et accompagnes des étudiants dans leurs projets et ambitions."}
+                                    </p>
+                                    <p>
+                                        {"Je souhaite partager avec vous mes connaissances et mon expérience dans le domaine exceptionnel du développement. Et le monde de la tech'."}
+                                    </p>
+                                    <p>
+                                        {"à côté de tout ça, je suis également en Alternance Chez Infotel, et encore en étude à l'EPSI."}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="lg:pl-20">
+                                <ul role="list">
+                                    <SocialLink href="#" icon={InstagramIcon} className="mt-4">
+                                        Follow on Instagram
+                                    </SocialLink>
+                                    <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+                                        Follow on GitHub
+                                    </SocialLink>
+                                    <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+                                        Follow on LinkedIn
+                                    </SocialLink>
+                                    <SocialLink
+                                        href="mailto:contact@andy-cinquin.fr"
+                                        icon={MailIcon}
+                                        className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+                                    >
+                                        contact@andy-cinquin.fr
+                                    </SocialLink>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            </>
+        </>
+    )
 }
+
+
+function SocialLink({className, href, children, icon: Icon}) {
+    return (
+        <li className={clsx(className, 'flex')}>
+            <Link
+                href={href}
+                className="group flex text-sm font-medium text-slate-800 transition hover:text-teal-500 dark:text-slate-200 dark:hover:text-teal-500"
+            >
+                <Icon className="h-6 w-6 flex-none fill-slate-500 transition group-hover:fill-teal-500"/>
+                <span className="ml-4">{children}</span>
+            </Link>
+        </li>
+    )
+}
+
+function MailIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+            <path
+                fillRule="evenodd"
+                d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+            />
+        </svg>
+    )
+}
+
