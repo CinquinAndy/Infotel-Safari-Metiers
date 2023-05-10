@@ -3,8 +3,12 @@ import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import Nav from '@components/Global/nav'
+import Router from 'next/router'
 
 export default function Home() {
+	const handleClickGo = () => {
+		typeof window !== 'undefined' && Router.push('/albums')
+	}
 	return (
 		<>
 			<Head>
@@ -29,6 +33,7 @@ export default function Home() {
 								className={'clip-me h-full w-full object-cover object-right'}
 							/>
 							<button
+								onClick={handleClickGo}
 								className={
 									'absolute left-0 top-1/2 flex h-20 w-20 -translate-y-1/2 items-center justify-center rounded-full bg-teal-500/30 ' +
 									'shadow-2xl sm:h-28 sm:w-28'
