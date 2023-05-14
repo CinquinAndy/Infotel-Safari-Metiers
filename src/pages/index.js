@@ -4,7 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import Nav from '@components/Global/nav'
 import Router from 'next/router'
-import Footer from "@components/Global/footer";
+import Footer from '@components/Global/footer'
 
 export default function Home() {
 	const handleClickGo = () => {

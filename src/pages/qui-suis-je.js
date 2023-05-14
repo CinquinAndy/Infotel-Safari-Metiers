@@ -3,10 +3,14 @@ import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import Nav from '@components/Global/nav'
-import {GitHubIcon, InstagramIcon, LinkedInIcon,} from '@components/Global/SocialIcons'
-import {SocialLink} from "@components/Icons/social-link";
-import {MailIcon} from "@components/Icons/mail-icon";
-import Footer from "@components/Global/footer";
+import {
+	GitHubIcon,
+	InstagramIcon,
+	LinkedInIcon,
+} from '@components/Global/SocialIcons'
+import { SocialLink } from '@components/Icons/social-link'
+import { MailIcon } from '@components/Icons/mail-icon'
+import Footer from '@components/Global/footer'
 
 export default function Home() {
 	return (
@@ -112,10 +116,9 @@ export default function Home() {
 							</div>
 						</div>
 					</main>
-					<Footer/>
+					<Footer />
 				</div>
 			</>
 		</>
 	)
 }
-
