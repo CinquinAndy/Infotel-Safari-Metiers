@@ -22,12 +22,12 @@ export default function Home() {
 			<>
 				<Nav />
 				<div className={'relative min-h-screen w-screen'}>
-					<main
-						className={
-							'mx-auto min-h-screen max-w-7xl px-8 pb-24 pt-12'
-						}
-					>
-						<div className={'lg:flex lg:h-full w-full lg:items-center lg:justify-center'}>
+					<main className={'mx-auto min-h-screen max-w-7xl px-8 pb-24 pt-12'}>
+						<div
+							className={
+								'w-full lg:flex lg:h-full lg:items-center lg:justify-center'
+							}
+						>
 							<div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
 								<div className="lg:pl-20">
 									<div className="flex max-w-xs px-2.5 lg:max-w-none">
