@@ -23,7 +23,7 @@ export default function Home() {
 				<Nav />
 				<div className={'relative min-h-screen w-screen'}>
 					<main
-						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 py-28'}
+						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 pt-12 pb-24'}
 					>
 						<div className={'flex h-full w-full items-center justify-center'}>
 							<div className=" grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -45,15 +45,15 @@ export default function Home() {
 									</div>
 								</div>
 								<div className="flex h-full flex-col items-start justify-center lg:order-first lg:row-span-2">
-									<h1 className="text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">
+									<h1 className="text-4xl font-bold tracking-tight text-slate-800 lg:text-5xl">
 										{"Hey ! Moi c'est Andy !"}
 									</h1>
 									<div className="mt-6 space-y-7 text-base text-slate-600">
 										<p>
-											{'→ CEO de la start-up ForMenu.io, '}
+											{'→ CEO de la start-up ForMenu, '}
 											<br />
 											{
-												'→ Co-fondateur de la plateforme de mise en relation entre particuliers et maquilleuses professionnelles My-Makeup.fr,'
+												'→ Co-fondateur de la plateforme de mise en relation entre particuliers et maquilleuses professionnelles My-Makeup,'
 											}
 											<br />
 											{

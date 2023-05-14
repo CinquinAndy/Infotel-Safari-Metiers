@@ -25,7 +25,7 @@ export default function Home() {
 							'absolute left-0 top-0 z-10 flex h-full w-full items-center justify-end'
 						}
 					>
-						<div className={'relative h-full w-1/3 sm:w-1/2'}>
+						<div className={'relative h-full w-1/3 lg:w-1/2'}>
 							<Image
 								src="/images/background_2.webp"
 								alt="Safari des métiers"
@@ -36,17 +36,17 @@ export default function Home() {
 								onClick={handleClickGo}
 								className={
 									'absolute left-0 top-1/2 flex h-20 w-20 -translate-y-1/2 items-center justify-center rounded-full bg-teal-500/30 ' +
-									'shadow-2xl sm:h-28 sm:w-28'
+									'shadow-2xl lg:h-28 lg:w-28'
 								}
 							>
 								<div
 									className={
-										'flex h-12 w-12 items-center justify-center rounded-full bg-slate-400/50 sm:h-20 sm:w-20'
+										'flex h-12 w-12 items-center justify-center rounded-full bg-slate-400/50 lg:h-20 lg:w-20'
 									}
 								>
 									<h2
 										className={
-											'text-center text-xl font-semibold text-white sm:text-3xl'
+											'text-center text-xl font-semibold text-white lg:text-3xl'
 										}
 									>
 										{'>'}
@@ -65,10 +65,10 @@ export default function Home() {
 								}
 							>
 								<h1 className={'flex flex-col gap-2'}>
-									<span className={'text-2xl text-teal-500 sm:text-5xl'}>
+									<span className={'text-2xl text-teal-500 lg:text-5xl'}>
 										Safari des métiers !
 									</span>
-									<span className={'text-lg text-slate-700 sm:text-3xl'}>
+									<span className={'text-lg text-slate-700 lg:text-3xl'}>
 										{"L'album de voyage"}
 									</span>
 								</h1>

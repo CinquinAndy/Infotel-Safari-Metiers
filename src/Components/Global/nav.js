@@ -33,16 +33,18 @@ export default function Nav() {
 		)
 	}, [])
 
+
+
 	return (
 		<Disclosure
 			as="nav"
-			className="fixed z-20 w-screen bg-slate-900 sm:bg-transparent"
+			className={"z-20 w-screen bg-slate-900 lg:bg-transparent" + ((currentPath === '/') ? ' fixed' : ' sticky')}
 		>
 			{({ open }) => (
 				<>
 					<div className="mx-auto max-w-7xl px-8">
 						<div className="relative flex h-16 items-center justify-between ">
-							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+							<div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
 								{/* Mobile menu button*/}
 								<Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-slate-50 hover:text-slate-100 focus:outline-none">
 									<span className="sr-only">Open main menu</span>
@@ -53,10 +55,10 @@ export default function Nav() {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className="flex w-full items-center justify-end sm:justify-start">
+							<div className="flex w-full items-center justify-end lg:justify-start">
 								<div
 									className={
-										'flex w-full items-center justify-end sm:w-1/2 sm:justify-between'
+										'flex w-full items-center justify-end lg:w-1/2 lg:justify-between'
 									}
 								>
 									<div className="flex items-center">
@@ -70,7 +72,7 @@ export default function Nav() {
 											/>
 										</Link>
 									</div>
-									<div className="hidden sm:block">
+									<div className="hidden lg:block">
 										<div className="flex space-x-16">
 											{navigationWithCurrent.map(item => (
 												<Link
@@ -78,7 +80,7 @@ export default function Nav() {
 													href={item.href}
 													className={classNames(
 														item.current
-															? 'text-white'
+															? 'text-teal-950'
 															: 'text-teal-700 hover:text-teal-900',
 														'text-sm font-semibold'
 													)}
@@ -94,23 +96,23 @@ export default function Nav() {
 						</div>
 					</div>
 
-					<Disclosure.Panel className="bg-slate-900 sm:hidden">
+					<Disclosure.Panel className="bg-slate-900 lg:hidden">
 						<div className="space-y-1 px-8 py-4">
 							{navigationWithCurrent.map(item => (
-								<Disclosure.Button
+								<Link
 									key={item.name}
 									as="Link"
 									href={item.href}
 									className={classNames(
 										item.current
 											? 'bg-slate-900 text-white'
-											: 'text-slate-100 hover:bg-slate-700 hover:text-white',
+											: 'hover:bg-slate-700 text-slate-300 hover:text-teal-900',
 										'block rounded-md px-3 py-2 font-medium'
 									)}
 									aria-current={item.current ? 'page' : undefined}
 								>
 									{item.name}
-								</Disclosure.Button>
+								</Link>
 							))}
 						</div>
 					</Disclosure.Panel>

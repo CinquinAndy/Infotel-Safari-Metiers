@@ -41,7 +41,7 @@ export default function Albums(props) {
 				<Nav />
 				<div className={'relative min-h-screen w-screen'}>
 					<main
-						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 py-28 '}
+						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 pt-12 pb-24 '}
 					>
 						<section className={'flex w-full items-center justify-start'}>
 							<div
@@ -50,7 +50,7 @@ export default function Albums(props) {
 								}
 							>
 								<h1 className={'flex flex-col gap-2'}>
-									<span className={'text-2xl text-teal-500 sm:text-5xl'}>
+									<span className={'text-2xl text-teal-500 lg:text-5xl'}>
 										Mes albums&nbsp;!
 									</span>
 								</h1>
@@ -58,7 +58,7 @@ export default function Albums(props) {
 						</section>
 						<ul
 							role="list"
-							className="my-8 grid grid-cols-2 gap-x-4 gap-y-8 pb-20 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
+							className="my-8 grid grid-cols-2 gap-x-4 gap-y-8 pb-20 lg:grid-cols-2 lg:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
 						>
 							{albums.map(album => (
 								<li key={album.id} className="relative">
