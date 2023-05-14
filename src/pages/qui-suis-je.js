@@ -23,15 +23,17 @@ export default function Home() {
 				<Nav />
 				<div className={'relative min-h-screen w-screen'}>
 					<main
-						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 pt-12 pb-24'}
+						className={
+							'mx-auto min-h-screen max-w-7xl px-8 pb-24 pt-12'
+						}
 					>
-						<div className={'flex h-full w-full items-center justify-center'}>
-							<div className=" grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+						<div className={'lg:flex lg:h-full w-full lg:items-center lg:justify-center'}>
+							<div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
 								<div className="lg:pl-20">
 									<div className="flex max-w-xs px-2.5 lg:max-w-none">
 										<div
 											className={
-												'w-auto rotate-3 rounded-2xl  bg-slate-50 p-10 shadow-2xl'
+												'w-auto rotate-3 rounded-2xl bg-slate-50 p-10 shadow-2xl'
 											}
 										>
 											<Image
@@ -39,7 +41,7 @@ export default function Home() {
 												alt="Logo Andy"
 												width={250}
 												height={250}
-												className="aspect-square  object-cover"
+												className="aspect-square object-cover"
 											/>
 										</div>
 									</div>
@@ -69,7 +71,7 @@ export default function Home() {
 										</p>
 										<p>
 											{
-												'Je souhaite partager avec vous mes connaissances et mon expérience dans le domaine exceptionnel du développement et le monde de la tech.'
+												'Je souhaite partager mes connaissances et mon expérience dans le domaine exceptionnel du développement et le monde de la tech.'
 											}
 										</p>
 										<p>
@@ -86,26 +88,26 @@ export default function Home() {
 											icon={InstagramIcon}
 											className="mt-4"
 										>
-											Follow me on Instagram
+											Contactez-moi sur Instagram
 										</SocialLink>
 										<SocialLink
 											href={'https://github.com/CinquinAndy/'}
 											icon={GitHubIcon}
 											className="mt-4"
 										>
-											Follow me on GitHub
+											Contactez-moi sur GitHub
 										</SocialLink>
 										<SocialLink
 											href={'https://www.linkedin.com/in/andy-cinquin/'}
 											icon={LinkedInIcon}
 											className="mt-4"
 										>
-											Follow me on LinkedIn
+											Contactez-moi sur LinkedIn
 										</SocialLink>
 										<SocialLink
 											href="mailto:contact@andy-cinquin.fr"
 											icon={MailIcon}
-											className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+											className="mt-8 border-t border-slate-100 pt-8 "
 										>
 											contact@andy-cinquin.fr
 										</SocialLink>
@@ -128,7 +130,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
 				className="group flex text-sm font-medium text-slate-800 transition hover:text-teal-700 "
 			>
 				<Icon className="h-6 w-6 flex-none fill-slate-500 transition group-hover:fill-teal-700" />
-				<span className="ml-4">{children}</span>
+				<span className="ml-4 flex items-center">{children}</span>
 			</Link>
 		</li>
 	)

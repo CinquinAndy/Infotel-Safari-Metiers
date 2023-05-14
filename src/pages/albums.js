@@ -41,7 +41,9 @@ export default function Albums(props) {
 				<Nav />
 				<div className={'relative min-h-screen w-screen'}>
 					<main
-						className={'mx-auto h-screen min-h-screen max-w-7xl px-8 pt-12 pb-24 '}
+						className={
+							'mx-auto h-screen min-h-screen max-w-7xl px-8 pb-24 pt-12 '
+						}
 					>
 						<section className={'flex w-full items-center justify-start'}>
 							<div
@@ -58,7 +60,7 @@ export default function Albums(props) {
 						</section>
 						<ul
 							role="list"
-							className="my-8 grid grid-cols-2 gap-x-4 gap-y-8 pb-20 lg:grid-cols-2 lg:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
+							className="my-8 grid grid-cols-2 gap-x-4 gap-y-8 pb-20 lg:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 xl:gap-x-8"
 						>
 							{albums.map(album => (
 								<li key={album.id} className="relative">

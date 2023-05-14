@@ -33,12 +33,13 @@ export default function Nav() {
 		)
 	}, [])
 
-
-
 	return (
 		<Disclosure
 			as="nav"
-			className={"z-20 w-screen bg-slate-900 lg:bg-transparent" + ((currentPath === '/') ? ' fixed' : ' sticky')}
+			className={
+				'z-20 w-screen bg-slate-900 lg:bg-transparent' +
+				(currentPath === '/' ? ' fixed' : ' sticky')
+			}
 		>
 			{({ open }) => (
 				<>
@@ -106,7 +107,7 @@ export default function Nav() {
 									className={classNames(
 										item.current
 											? 'bg-slate-900 text-white'
-											: 'hover:bg-slate-700 text-slate-300 hover:text-teal-900',
+											: 'text-slate-300 hover:bg-slate-700 hover:text-teal-900',
 										'block rounded-md px-3 py-2 font-medium'
 									)}
 									aria-current={item.current ? 'page' : undefined}
