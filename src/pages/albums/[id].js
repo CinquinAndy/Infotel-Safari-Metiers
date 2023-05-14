@@ -31,7 +31,7 @@ export default function Album({ albumData }) {
 						<section className={'flex w-full items-center justify-start'}>
 							<div
 								className={
-									'flex h-full w-1/2 flex-col items-start justify-start'
+									'flex h-full w-1/2 flex-col items-start justify-start gap-8'
 								}
 							>
 								<h1 className={'flex flex-col gap-2'}>
@@ -39,6 +39,13 @@ export default function Album({ albumData }) {
 										{albumData.title}
 									</span>
 								</h1>
+								{
+									// dangerous html from albumData.description
+								}
+								<div
+									className={'text-base text-slate-500 flex flex-col gap-4'}
+									dangerouslySetInnerHTML={{ __html: albumData.description }}
+								/>
 							</div>
 						</section>
 						<ul
