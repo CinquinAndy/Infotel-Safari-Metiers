@@ -7,6 +7,7 @@ import Nav from '@components/Global/nav'
 import Image from 'next/image'
 import Router from 'next/router'
 import React from 'react'
+import Footer from "@components/Global/footer";
 
 export default function Album({ albumData }) {
 	return (
@@ -25,7 +26,7 @@ export default function Album({ albumData }) {
 				<div className={'relative min-h-screen w-screen'}>
 					<main
 						className={
-							'mx-auto h-screen min-h-screen max-w-7xl px-8 pb-24 pt-12 '
+							'mx-auto min-h-screen max-w-7xl px-8 pb-24 pt-12 '
 						}
 					>
 						<section className={'flex w-full items-center justify-start'}>
@@ -72,6 +73,7 @@ export default function Album({ albumData }) {
 						</ul>
 					</main>
 				</div>
+				<Footer/>
 			</>
 		</>
 	)

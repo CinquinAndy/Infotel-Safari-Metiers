@@ -7,6 +7,7 @@ import { useQuery } from '@tanstack/react-query'
 import Loader from '@components/Global/Loader'
 import Router from 'next/router'
 import { initPocketBase } from '../../lib/pocketbase'
+import Footer from "@components/Global/footer";
 
 export default function Albums(props) {
 	const pb = initPocketBase()
@@ -42,7 +43,7 @@ export default function Albums(props) {
 				<div className={'relative min-h-screen w-screen'}>
 					<main
 						className={
-							'mx-auto h-screen min-h-screen max-w-7xl px-8 pb-24 pt-12 '
+							'mx-auto min-h-screen max-w-7xl px-8 pb-24 pt-12 '
 						}
 					>
 						<section className={'flex w-full items-center justify-start'}>
@@ -95,6 +96,7 @@ export default function Albums(props) {
 							))}
 						</ul>
 					</main>
+					<Footer/>
 				</div>
 			</>
 		</>
