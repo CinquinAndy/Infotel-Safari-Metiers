@@ -43,7 +43,7 @@ export default function Album({ albumData }) {
 									// dangerous html from albumData.description
 								}
 								<div
-									className={'text-base text-slate-500 flex flex-col gap-4'}
+									className={'flex flex-col gap-4 text-base text-slate-500'}
 									dangerouslySetInnerHTML={{ __html: albumData.description }}
 								/>
 							</div>
