@@ -111,7 +111,7 @@ export default function Home() {
 				<section className={'min-h-screen w-full bg-teal-950'}>
 					<Prestations />
 				</section>
-				<Footer />
+				<Footer alt={true} />
 			</>
 		</>
 	)
