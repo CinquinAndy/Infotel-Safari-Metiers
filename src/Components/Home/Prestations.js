@@ -34,7 +34,7 @@ function Prestations(props) {
 		<main className={'mx-auto max-w-7xl px-8 py-20 text-white'}>
 			<section
 				className={
-					'flex h-full w-full flex-wrap items-center justify-start gap-80 py-40'
+					'flex h-full w-full flex-wrap items-center justify-start pt-20 lg:gap-80 lg:py-40'
 				}
 			>
 				{data.map((prestation, index) => (
@@ -46,14 +46,14 @@ function Prestations(props) {
 					>
 						<div
 							className={
-								'relative flex w-full flex-wrap gap-32 lg:flex-nowrap ' +
+								'relative flex w-full flex-wrap gap-16 lg:flex-nowrap lg:gap-32 ' +
 								(index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row')
 							}
 						>
-							<div className={'flex w-full flex-col gap-4 pb-32 lg:w-1/2'}>
+							<div className={'flex w-full flex-col gap-4  pb-32 lg:w-1/2'}>
 								<p
 									className={
-										'custom-tag relative flex w-full flex-col items-start justify-center gap-2'
+										'custom-tag relative ml-10 flex w-full flex-col items-start justify-center gap-2 2xl:ml-0'
 									}
 								>
 									<span
@@ -75,7 +75,7 @@ function Prestations(props) {
 								</p>
 								<div
 									className={
-										'flex w-10/12 flex-col gap-4 text-sm text-white/90'
+										'flex w-full flex-col gap-4 text-sm text-white/90 lg:w-10/12'
 									}
 									dangerouslySetInnerHTML={{
 										__html: prestation.description,
