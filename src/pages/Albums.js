@@ -26,10 +26,6 @@ export default function Albums(props) {
 	if (isLoading) return <Loader />
 
 	if (error) return 'An error has occurred: ' + error.message
-	const albums = data
-
-	console.log(albums)
-
 	return (
 		<>
 			<Head>
@@ -59,7 +55,7 @@ export default function Albums(props) {
 							role="list"
 							className="my-8 grid grid-cols-1 gap-x-4 gap-y-8 pb-20 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 xl:gap-x-8"
 						>
-							{albums.map(album => (
+							{data.map(album => (
 								<li key={album.id} className="relative">
 									<div
 										className={
