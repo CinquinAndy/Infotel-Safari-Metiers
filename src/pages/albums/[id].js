@@ -3,11 +3,11 @@ import { getAlbumIdList, getAlbumsDetails } from '../../../lib/albums'
 import { useQuery } from '@tanstack/react-query'
 import { initPocketBase } from '../../../lib/pocketbase'
 import Head from 'next/head'
-import Nav from '@components/Global/nav'
+import Nav from '@components/Global/Nav'
 import Image from 'next/image'
 import Router from 'next/router'
 import React from 'react'
-import Footer from '@components/Global/footer'
+import Footer from '@components/Global/Footer'
 
 export default function Album({ albumData }) {
 	return (

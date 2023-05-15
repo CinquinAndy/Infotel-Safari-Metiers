@@ -13,7 +13,7 @@ function Footer(props) {
 				>
 					Andy Cinquin
 				</Link>
-				&nbsp; -
+				&nbsp; - &nbsp;
 				<Link
 					className={'text-sm text-slate-600 underline'}
 					href={'https://infotel.com'}

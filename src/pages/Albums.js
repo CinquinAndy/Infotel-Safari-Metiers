@@ -2,12 +2,12 @@ import Head from 'next/head'
 
 import React from 'react'
 import Image from 'next/image'
-import Nav from '@components/Global/nav'
+import Nav from '@components/Global/Nav'
 import { useQuery } from '@tanstack/react-query'
 import Loader from '@components/Global/Loader'
 import Router from 'next/router'
 import { initPocketBase } from '../../lib/pocketbase'
-import Footer from '@components/Global/footer'
+import Footer from '@components/Global/Footer'
 
 export default function Albums(props) {
 	const pb = initPocketBase()

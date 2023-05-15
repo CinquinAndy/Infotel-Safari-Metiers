@@ -2,9 +2,10 @@ import Head from 'next/head'
 
 import React from 'react'
 import Image from 'next/image'
-import Nav from '@components/Global/nav'
+import Nav from '@components/Global/Nav'
 import Router from 'next/router'
-import Footer from '@components/Global/footer'
+import Footer from '@components/Global/Footer'
+import Prestations from '@components/Home/Prestations'
 
 export default function Home() {
 	const handleClickGo = () => {
@@ -37,7 +38,7 @@ export default function Home() {
 
 			<>
 				<Nav />
-				<div className={'relative h-screen w-screen'}>
+				<div className={'relative min-h-screen w-screen'}>
 					<div
 						className={
 							'absolute left-0 top-0 z-10 flex h-full w-full items-center justify-end'
@@ -94,19 +95,23 @@ export default function Home() {
 							</div>
 						</section>
 					</main>
-				</div>
-				<svg height="0" width="0">
-					<defs>
-						<clipPath id="svgPath">
-							<path
-								className="st0"
-								d="M1920,0H215.1c-5.3,57.5,42.6,113.2,7.4,181.5c-24.9,48.4-58.7,39.4-99,102c-33.1,51.5-15.7,66.1-53,144
+					<svg height="0" width="0">
+						<defs>
+							<clipPath id="svgPath">
+								<path
+									className="st0"
+									d="M1920,0H215.1c-5.3,57.5,42.6,113.2,7.4,181.5c-24.9,48.4-58.7,39.4-99,102c-33.1,51.5-15.7,66.1-53,144
 		c-36.2,75.6-59.2,75.6-62,117c-4,60.2,43.7,73.6,38,133c-4.9,50.8-41.4,57.3-46,112c-3.5,41.9,14.7,74.9,28,99
 		c41.3,74.9,88.5,72.3,124,133c12.8,21.9,17.7,41,19.4,58.5H1920V0z"
-							/>
-						</clipPath>
-					</defs>
-				</svg>
+								/>
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<section className={'min-h-screen w-full bg-teal-950'}>
+					<Prestations />
+				</section>
+				<Footer />
 			</>
 		</>
 	)

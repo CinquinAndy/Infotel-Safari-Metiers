@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import React from 'react'
 import Image from 'next/image'
-import Nav from '@components/Global/nav'
+import Nav from '@components/Global/Nav'
 import {
 	GitHubIcon,
 	InstagramIcon,
@@ -10,7 +10,7 @@ import {
 } from '@components/Global/SocialIcons'
 import { SocialLink } from '@components/Icons/social-link'
 import { MailIcon } from '@components/Icons/mail-icon'
-import Footer from '@components/Global/footer'
+import Footer from '@components/Global/Footer'
 
 export default function Home() {
 	return (
