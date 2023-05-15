@@ -33,26 +33,33 @@ function Prestations(props) {
 	return (
 		<main className={'mx-auto max-w-7xl px-8 py-20 text-white'}>
 			<section
-				className={'flex h-full w-full flex-wrap items-center justify-start'}
+				className={
+					'flex h-full w-full flex-wrap items-center justify-start gap-80 py-40'
+				}
 			>
-				{data.map(prestation => (
+				{data.map((prestation, index) => (
 					<div
 						key={prestation.id}
 						className={
-							'my-20 flex h-full w-full flex-col items-start justify-start gap-4'
+							'flex h-full w-full flex-col items-start justify-start gap-4 '
 						}
 					>
 						<div
-							className={'relative flex w-full flex-wrap gap-16 lg:flex-nowrap'}
+							className={
+								'relative flex w-full flex-wrap gap-16 lg:flex-nowrap ' +
+								(index % 2 === 0 ? 'flex-row-reverse' : 'flex-row')
+							}
 						>
-							<div className={'flex w-full flex-col gap-4 pb-16 lg:w-1/2'}>
+							<div className={'flex w-full flex-col gap-4 pb-32 lg:w-1/2'}>
 								<p
 									className={
-										'custom-tag opacity- relative flex w-full flex-col items-start justify-center gap-2'
+										'custom-tag relative flex w-full flex-col items-start justify-center gap-2'
 									}
 								>
 									<span
-										className={'text-sm uppercase tracking-widest text-white'}
+										className={
+											'text-sm uppercase tracking-widest text-teal-400'
+										}
 									>
 										Prestation
 									</span>
@@ -68,7 +75,7 @@ function Prestations(props) {
 								</p>
 								<div
 									className={
-										'flex w-10/12 flex-col gap-4 text-sm text-white/80'
+										'flex w-10/12 flex-col gap-4 text-sm text-white/90'
 									}
 									dangerouslySetInnerHTML={{
 										__html: prestation.description,
@@ -77,7 +84,7 @@ function Prestations(props) {
 								<div>
 									<button
 										className={
-											'flex items-center justify-center rounded border border-teal-200 bg-transparent px-6 py-2 text-center text-sm font-semibold text-teal-200'
+											'flex items-center justify-center rounded border border-teal-400 bg-transparent px-8 py-3 text-center text-sm font-semibold text-teal-400'
 										}
 									>
 										Contactez-nous
@@ -92,8 +99,20 @@ function Prestations(props) {
 									alt="Photo Album"
 									quality={75}
 									fill={true}
-									className="custom-bg pointer-events-none object-cover object-center"
+									className="pointer-events-none z-20 object-cover object-center"
 								/>
+								<div className={'relative z-10 h-full w-full'}>
+									<div
+										className={
+											'pointer-events-none z-20  h-full w-full -translate-x-1/2 transform select-none bg-white/5'
+										}
+									></div>
+									<div
+										className={
+											'pointer-events-none absolute right-0 top-0 z-20  h-1/3 w-[2px] -translate-y-1/2 transform select-none bg-white/50'
+										}
+									></div>
+								</div>
 							</div>
 						</div>
 					</div>
