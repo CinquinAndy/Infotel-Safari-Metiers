@@ -38,7 +38,7 @@ export default function Nav() {
 			as="nav"
 			className={
 				'z-20 w-screen bg-slate-900 lg:bg-transparent' +
-				(currentPath === '/' ? ' fixed' : ' sticky')
+				(currentPath === '/' ? ' absolute' : ' sticky')
 			}
 		>
 			{({ open }) => (
