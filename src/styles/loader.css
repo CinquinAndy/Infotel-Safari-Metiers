@@ -1,7 +1,7 @@
 .loader {
 	position: absolute;
 	top: 50%;
-	left: 45%;
+	left: 20%;
 	width: 100%;
 	height: 100%;
 	background: #fff;
@@ -60,4 +60,30 @@
 	outline: #cbd5e1 1px solid !important;
 	filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
 		drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)) !important;
+}
+
+/* media querie , on tablet & desktop : */
+@media screen and (min-width: 500px) {
+	.loader {
+		position: absolute;
+		top: 50%;
+		left: 35%;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		filter: contrast(20);
+	}
+}
+
+/* media querie , on tablet & desktop : */
+@media screen and (min-width: 768px) {
+	.loader {
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		filter: contrast(20);
+	}
 }

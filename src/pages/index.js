@@ -62,13 +62,14 @@ export default function Home() {
 										'flex h-12 w-12 items-center justify-center rounded-full bg-slate-400/50 lg:h-20 lg:w-20'
 									}
 								>
-									<h2
-										className={
-											'text-center text-xl font-semibold text-white lg:text-3xl'
-										}
-									>
-										{'>'}
-									</h2>
+									<div className={'relative h-4 w-4 lg:h-6 lg:w-6'}>
+										<Image
+											src={'/right-chevron.svg'}
+											alt={'go to'}
+											fill={true}
+											className={'object-cover object-center'}
+										/>
+									</div>
 								</div>
 							</button>
 						</div>
