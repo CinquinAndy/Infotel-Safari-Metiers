@@ -46,8 +46,8 @@ function Prestations(props) {
 					>
 						<div
 							className={
-								'relative flex w-full flex-wrap gap-16 lg:flex-nowrap ' +
-								(index % 2 === 0 ? 'flex-row-reverse' : 'flex-row')
+								'relative flex w-full flex-wrap gap-32 lg:flex-nowrap ' +
+								(index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row')
 							}
 						>
 							<div className={'flex w-full flex-col gap-4 pb-32 lg:w-1/2'}>
@@ -104,12 +104,14 @@ function Prestations(props) {
 								<div className={'relative z-10 h-full w-full'}>
 									<div
 										className={
-											'pointer-events-none z-20  h-full w-full -translate-x-1/2 transform select-none bg-white/5'
+											'pointer-events-none z-20  h-full w-full transform select-none bg-white/5 ' +
+											(index % 2 !== 0 ? 'translate-x-1/2' : '-translate-x-1/2')
 										}
 									></div>
 									<div
 										className={
-											'pointer-events-none absolute right-0 top-0 z-20  h-1/3 w-[2px] -translate-y-1/2 transform select-none bg-white/50'
+											'pointer-events-none absolute top-0 z-20  h-1/3 w-[2px] -translate-y-1/2 transform select-none bg-white/50 ' +
+											(index % 2 !== 0 ? 'left-0' : 'right-0')
 										}
 									></div>
 								</div>
