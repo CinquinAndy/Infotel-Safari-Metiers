@@ -23,13 +23,10 @@ function Prestations(props) {
 		},
 	})
 
-	console.log(isLoading, isError, data, error)
-
 	if (isLoading) return <Loader />
 
 	if (error) return 'An error has occurred: ' + error.message
 
-	console.log(data)
 	return (
 		<main className={'mx-auto max-w-7xl px-8 py-20 text-white'}>
 			<section

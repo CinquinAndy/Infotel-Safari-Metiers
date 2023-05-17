@@ -21,8 +21,6 @@ export default function Albums(props) {
 		},
 	})
 
-	console.log(isLoading, isError, data, error)
-
 	if (isLoading) return <Loader />
 
 	if (error) return 'An error has occurred: ' + error.message

@@ -3,7 +3,6 @@ import Link from 'next/link'
 
 function Footer(props) {
 	const alternativeDesign = props.alt ?? false
-	console.log(alternativeDesign)
 	return (
 		<div
 			className={
