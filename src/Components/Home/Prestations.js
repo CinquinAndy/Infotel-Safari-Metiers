@@ -96,6 +96,7 @@ function Prestations(props) {
 									alt="Photo Album"
 									quality={75}
 									fill={true}
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 									className="pointer-events-none z-20 object-cover object-center"
 								/>
 								<div className={'relative z-10 h-full w-full'}>

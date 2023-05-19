@@ -47,8 +47,10 @@ export default function Home() {
 						<div className={'relative h-full w-1/3 lg:w-1/2'}>
 							<Image
 								src="/images/background_2.webp"
+								quality={90}
 								alt="Safari des métiers"
 								fill={true}
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								className={'clip-me h-full w-full object-cover object-right'}
 							/>
 							<button
