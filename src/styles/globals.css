@@ -69,7 +69,7 @@ h6 * {
 	grid-auto-flow: dense;
 }
 
-.custom-tag:before{
+.custom-tag:before {
 	content: '→';
 	position: absolute;
 	left: 0;
@@ -79,7 +79,7 @@ h6 * {
 	color: #2dd4bf;
 }
 
-.custom-bg{
+.custom-bg {
 	content: '';
 	position: absolute;
 	top: 0;
