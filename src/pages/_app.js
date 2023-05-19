@@ -1,5 +1,4 @@
 import '@/styles/globals.css'
-import '@/styles/loader.css'
 import Head from 'next/head'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
