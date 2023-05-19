@@ -5,6 +5,7 @@ import Router from 'next/router'
 import Footer from '@components/Global/Footer'
 import Nav from '@components/Global/Nav'
 import Image from 'next/image'
+import Prestations from '@components/Home/Prestations'
 
 export default function Home() {
 	const handleClickGo = () => {
@@ -109,6 +110,9 @@ export default function Home() {
 						</defs>
 					</svg>
 				</div>
+				<section className={'min-h-screen w-full bg-teal-950'}>
+					<Prestations />
+				</section>
 				<Footer alt={true} />
 			</>
 		</>
