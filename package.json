@@ -11,7 +11,7 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@headlessui/react": "1.7.14",
+		"@headlessui/react": "1.7.15",
 		"@heroicons/react": "2.0.18",
 		"@tailwindcss/aspect-ratio": "0.4.2",
 		"@tanstack/query-core": "4.29.11",
