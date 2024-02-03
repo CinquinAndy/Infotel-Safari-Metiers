@@ -42,8 +42,8 @@ dependencies:
     specifier: 13.5.5
     version: 13.5.5(react-dom@18.2.0)(react@18.2.0)
   pocketbase:
-    specifier: 0.15.0
-    version: 0.15.0
+    specifier: 0.21.1
+    version: 0.21.1
   postcss:
     specifier: 8.4.31
     version: 8.4.31
@@ -2747,8 +2747,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /pocketbase@0.15.0:
-    resolution: {integrity: sha512-JaJIgMF0iiEiE7IS1q/SkQ3+a74HPnTXiuquHISSoZc23FHEOLXzDS+J8J1kWZmwFZmfqD0VDftlUUMs743J9w==}
+  /pocketbase@0.21.1:
+    resolution: {integrity: sha512-0PvCP4pKtxsV9kwldEGyibEvhwOcx9jSCrz3WN5CgPILJfM0z76f1op9WE8/8UgikDsMdRsc5iBLfKintrJS1g==}
     dev: false
 
   /postcss-import@15.1.0(postcss@8.4.31):
