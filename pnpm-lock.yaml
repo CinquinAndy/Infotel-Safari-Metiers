@@ -42,8 +42,8 @@ dependencies:
     specifier: 13.5.5
     version: 13.5.5(react-dom@18.2.0)(react@18.2.0)
   pocketbase:
-    specifier: 0.15.0
-    version: 0.15.0
+    specifier: 0.26.1
+    version: 0.26.1
   postcss:
     specifier: 8.4.31
     version: 8.4.31
@@ -578,6 +578,7 @@ packages:
 
   /acorn-import-assertions@1.8.0(acorn@8.9.0):
     resolution: {integrity: sha512-m7VZ3jwz4eK6A4Vtt8Ew1/mNbP24u0FhdyfA7fSvnJR6LMdfOYnmuIrrJAgrYfYJ10F/otaHTtrtrtmHdMNzEw==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:
@@ -2747,8 +2748,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /pocketbase@0.15.0:
-    resolution: {integrity: sha512-JaJIgMF0iiEiE7IS1q/SkQ3+a74HPnTXiuquHISSoZc23FHEOLXzDS+J8J1kWZmwFZmfqD0VDftlUUMs743J9w==}
+  /pocketbase@0.26.1:
+    resolution: {integrity: sha512-fjcPDpxyqTZCwqGUTPUV7vssIsNMqHxk9GxbhxYHPEf18RqX2d9cpSqbbHk7aas30jqkgptuKfG7aY/Mytjj3g==}
     dev: false
 
   /postcss-import@15.1.0(postcss@8.4.31):
